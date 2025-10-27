@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game On Ulaanbaatar | pcdii.mn</title>
+</head>
+<body>
+  <header>
+    <div class="logo">pcdii.mn</div>
+    <div class="search-bar">
+      <select>
+        <option>PC</option>
+      </select>
+      <input type="text" placeholder="Хайх газрын нэрийг бичнэ үү" />
+    </div>
+    <div class="nav-links">
+      <a href="#">Нэвтрэх</a>
+      <a href="#">Бүртгүүлэх</a>
+      <a href="#">PC-гээ бүртгүүлэх</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="header-section">
+      <div class="logo-circle">GAME<br>ON</div>
+      <div class="place-info">
+        <div>
+          <span class="rating-stars">★★★★☆</span>
+          <span class="rating-number">4.2</span>
+        </div>
+        <h1>Game On Ulaanbaatar</h1>
+        <div class="contact-info">
+          <span>🕐 Always open</span>
+          <span>📞 7277-1155</span>
+          <span>📷 gameon.ulaanbaatar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="left-section" style="position: relative;">
+        <img src="" alt="Gaming Center Interior">
+        <div class="image-nav">➜</div>
+        <div class="carousel-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="card">
+          <div class="capacity-header">
+            <div class="capacity-item">
+              Нийт<br><b>120</b>
+            </div>
+            <div class="capacity-item">
+              Сул<br><b>24</b>
+            </div>
+            <div class="usage-badge">96/120</div>
+          </div>
+          
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">🌬️</div>
+              <span>Агаар цэвэршүүлэгч</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🚬</div>
+              <span>Тамхины өрөө</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📶</div>
+              <span>Үнэгүй Wi-Fi</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🍔</div>
+              <span>Хоол гардаг</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🅿️</div>
+              <span>Зогсоолтой</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🔌</div>
+              <span>Утасгүй цэнэглэгч</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-header">
+            <div class="room-title">Өрөөний нэр</div>
+            <div class="availability-badge">12/40</div>
+          </div>
+          <div class="room-title" style="font-size: 20px; margin-bottom: 8px;">ЗААЛ (240hz)</div>
+          <div class="room-pricing">Цагийн: 5,500 ₮ | Хоногийн: 30,000 ₮</div>
+          
+          <div class="specs-section">
+            <h4>Тоног төхөөрөмж</h4>
+            <div class="spec-item">
+              <span class="spec-label">CPU:</span>
+              <span class="spec-value">i7-14th gen</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">RAM:</span>
+              <span class="spec-value">32GB</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">GPU:</span>
+              <span class="spec-value">RTX 4070 Ti Super</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Monitor:</span>
+              <span class="spec-value">BenQ 240hz XL2546K</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Headset:</span>
+              <span class="spec-value">HyperX Cloud III</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Mouse:</span>
+              <span class="spec-value">Zowie EC3-C</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Keyboard:</span>
+              <span class="spec-value">Royal Kludge R87 Pro TKL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <div class="time-inputs">
+            <input type="text" class="time-input" placeholder="Start time">
+            <span class="time-separator">→</span>
+            <input type="text" class="time-input" placeholder="End time">
+          </div>
+          <button class="book-button">Суудал захиалах</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background-color: #1a1a2e;
+    }
+    header {
+      background: #2d1b4e;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      margin-right: 20px;
+      letter-spacing: -0.5px;
+    }
+    .search-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 1;
+      max-width: 500px;
+    }
+    .search-bar select {
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: none;
+      background: white;
+      font-size: 14px;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 8px 16px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+    }
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 30px 24px;
+    }
+    .header-section {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      margin-bottom: 24px;
+    }
+    .logo-circle {
+      width: 120px;
+      height: 120px;
+      background: #e91e63;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+      line-height: 1.2;
+      box-shadow: 0 4px 16px rgba(233, 30, 99, 0.3);
+    }
+    .place-info {
+      flex: 1;
+    }
+    .rating-stars {
+      color: #ffd700;
+      font-size: 18px;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .rating-number {
+      color: #666;
+      font-size: 16px;
+      margin-left: 8px;
+    }
+    .place-info h1 {
+      font-size: 32px;
+      color: #222;
+      margin: 8px 0;
+      font-weight: 600;
+    }
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #666;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    .contact-info span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .main-content {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 24px;
+    }
+    .left-section {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      height: fit-content;
+    }
+    .left-section img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+    .image-nav {
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.9);
+      border-radius: 8px;
+      padding: 8px;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .capacity-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .capacity-item {
+      font-size: 16px;
+      color: #333;
+    }
+    .capacity-item b {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .usage-badge {
+      background: #ef5350;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: #444;
+    }
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+      background: #9c27b0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 16px;
+    }
+    .room-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .room-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .room-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #222;
+    }
+    .availability-badge {
+      background: #66bb6a;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .room-pricing {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 16px;
+    }
+    .specs-section {
+      background: #f8f8f8;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+    }
+    .specs-section h4 {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .spec-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e0e0;
+      font-size: 14px;
+    }
+    .spec-item:last-child {
+      border-bottom: none;
+    }
+    .spec-label {
+      color: #666;
+    }
+    .spec-value {
+      color: #222;
+      font-weight: 500;
+    }
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ddd;
+      cursor: pointer;
+    }
+    .dot.active {
+      background: #9c27b0;
+      width: 24px;
+      border-radius: 4px;
+    }
+    .booking-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    .time-inputs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .time-input {
+      flex: 1;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+    .time-separator {
+      display: flex;
+      align-items: center;
+      color: #999;
+      font-size: 18px;
+    }
+    .book-button {
+      width: 100%;
+      background: #9c27b0;
+      color: white;
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(156, 39, 176, 0.3);
+    }
+    @media (max-width: 1024px) {
+      .main-content {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</body>
+</html>

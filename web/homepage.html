@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Gaming Centers in Ulaanbaatar - pcdii.mn</title>
+</head>
+<body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <header>
+    <div class="logo">pcdii.mn</div>
+    <div class="search-container">
+      <input type="text" placeholder="Хайх газрын нэрийг бичнэ үү" />
+      <span class="search-icon"></span>
+    </div>
+    <div class="nav-links">
+      <a href="#">Нэвтрэх</a>
+      <a href="#">Бүртгүүлэх</a>
+      <a href="#">РС-гээ бүртгүүлэх</a>
+    </div>
+  </header>
+  <main>
+    <div class="sidebar">
+      <div class="place-card">
+        <div class="score">4.2</div>
+        <div class="card-content">
+          <img src="Game.On.png" alt="Game On">
+          <div class="place-info">
+            <h3>Game On Ulaanbaatar</h3>
+            <div class="location">
+              <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
+            </div>
+            <div class="rating-row">
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">12 сэтгэгдэл</span>
+              </div>
+              <span class="status">Онлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="score">2.3</div>
+        <div class="card-content">
+          <img src="Moon.png" alt="Moon PC">
+          <div class="place-info">
+            <h3>MOON PC Gaming Center</h3>
+            <div class="location">
+              <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
+            </div>
+            <div class="rating-row">
+              <div class="rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="review-count">9 сэтгэгдэл</span>
+              </div>
+              <span class="status">Онлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="score">4.2</div>
+        <div class="card-content">
+          <img src="Skol.tsirk.png" alt="SKOL Circus">
+          <div class="place-info">
+            <h3>SKOL Gaming Center | Цирк салбар</h3>
+            <div class="location">
+              <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
+            </div>
+            <div class="rating-row">
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">19 сэтгэгдэл</span>
+              </div>
+              <span class="status">Онлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="place-card">
+        <div class="score">4.2</div>
+        <div class="card-content">
+          <img src="Skol.10.png" alt="SKOL 10r horoolol">
+          <div class="place-info">
+            <h3>SKOL Gaming Center | 10-р хороолол салбар</h3>
+            <div class="location">
+              <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
+            </div>
+            <div class="rating-row">
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="review-count">12 сэтгэгдэл</span>
+              </div>
+              <span class="status">Онлайн</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.3256463447335!2d106.91709911553792!3d47.91847007920427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96925c62b5a6e7%3A0x78ec2b8d38e3b2db!2sUlaanbaatar!5e0!3m2!1sen!2smn!4v1689048433137!5m2!1sen!2smn"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </div>
+  </main>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #1a1a2e;
+      overflow: hidden;
+      font-family: 'Manrope', sans-serif;
+    }
+    header {
+      background: linear-gradient(135deg, #2d1b4e 0%, #1a1a2e 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 100;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      margin-right: 30px;
+      letter-spacing: -0.5px;
+    }
+    .search-container {
+      flex: 1;
+      max-width: 500px;
+      position: relative;
+    }
+    .search-container input {
+      width: 100%;
+      padding: 10px 40px 10px 16px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+      background: rgba(255,255,255,0.95);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .search-icon {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #888;
+    }
+    .nav-links {
+      margin-left: auto;
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+    }
+    .nav-links a:hover {
+      opacity: 1;
+    }
+    main {
+      display: flex;
+      height: calc(100vh - 56px);
+    }
+    .sidebar {
+      width: 520px;
+      overflow-y: auto;
+      background: #0f0f1e;
+      padding: 20px;
+    }
+    .sidebar::-webkit-scrollbar {
+      width: 8px;
+    }
+    .sidebar::-webkit-scrollbar-track {
+      background: #1a1a2e;
+    }
+    .sidebar::-webkit-scrollbar-thumb {
+      background: #3d3d5c;
+      border-radius: 4px;
+    }
+    .place-card {
+      background: linear-gradient(145deg, #2a2a40 0%, #1f1f35 100%);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+    }
+    .place-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(138, 43, 226, 0.3);
+    }
+    .card-content {
+      display: flex;
+      padding: 0;
+    }
+    .place-card img {
+      width: 200px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 16px 0 0 16px;
+    }
+    .place-info {
+      padding: 16px 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .place-info h3 {
+      color: #ffffff;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .location {
+      color: #999;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+    .rating-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #fff;
+    }
+    .stars {
+      color: #ffd700;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+    .review-count {
+      color: #888;
+      font-size: 13px;
+    }
+    .status {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+    }
+    .score {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      backdrop-filter: blur(8px);
+    }
+    #map {
+      flex: 1;
+      position: relative;
+    }
+    #map iframe {
+      filter: grayscale(0.2) contrast(1.1);
+    }
+    @media (max-width: 900px) {
+      main {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        height: 50%;
+      }
+      #map {
+        height: 50%;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</body>
+</html>
