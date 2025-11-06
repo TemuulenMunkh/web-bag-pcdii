@@ -23,78 +23,78 @@
   </header>
   <main>
     <div class="sidebar">
-      <div class="place-card">
-        <div class="score">4.2</div>
-        <div class="card-content">
+      <div class="place-card" id="gameon">
+        <div class="score" id="gameon">4.2</div>
+        <div class="card-content" id="gameon">
           <img src="Game.On.png" alt="Game On">
-          <div class="place-info">
+          <div class="place-info" id="gameon">
             <h3>Game On Ulaanbaatar</h3>
-            <div class="location">
+            <div class="location" id="gameon">
               <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
             </div>
-            <div class="rating-row">
-              <div class="rating">
-                <span class="stars">★★★★★</span>
-                <span class="review-count">12 сэтгэгдэл</span>
+            <div class="rating-row" id="gameon">
+              <div class="rating" id="gameon">
+                <span class="stars" id="gameon">★★★★★</span>
+                <span class="review-count" id="gameon">12 сэтгэгдэл</span>
               </div>
-              <span class="status">Онлайн</span>
+              <span class="status" id="gameon">Онлайн</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="place-card">
-        <div class="score">2.3</div>
-        <div class="card-content">
+      <div class="place-card" id="moon">
+        <div class="score" id="moon">2.3</div>
+        <div class="card-content" id="moon">
           <img src="Moon.png" alt="Moon PC">
-          <div class="place-info">
+          <div class="place-info" id="moon">
             <h3>MOON PC Gaming Center</h3>
-            <div class="location">
+            <div class="location" id="moon">
               <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
             </div>
-            <div class="rating-row">
-              <div class="rating">
-                <span class="stars">★★★☆☆</span>
-                <span class="review-count">9 сэтгэгдэл</span>
+            <div class="rating-row" id="moon">
+              <div class="rating" id="moon">
+                <span class="stars" id="moon">★★★☆☆</span>
+                <span class="review-count" id="moon">9 сэтгэгдэл</span>
               </div>
-              <span class="status">Онлайн</span>
+              <span class="status" id="moon">Онлайн</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="place-card">
-        <div class="score">4.2</div>
-        <div class="card-content">
+      <div class="place-card" id="skol-tsirk">
+        <div class="score" id="skol-tsirk">4.2</div>
+        <div class="card-content" id="skol-tsirk">
           <img src="Skol.tsirk.png" alt="SKOL Circus">
-          <div class="place-info">
+          <div class="place-info" id="skol-tsirk">
             <h3>SKOL Gaming Center | Цирк салбар</h3>
-            <div class="location">
+            <div class="location" id="skol-tsirk">
               <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
             </div>
-            <div class="rating-row">
-              <div class="rating">
-                <span class="stars">★★★★★</span>
-                <span class="review-count">19 сэтгэгдэл</span>
+            <div class="rating-row" id="skol-tsirk">
+              <div class="rating" id="skol-tsirk">
+                <span class="stars" id="skol-tsirk">★★★★★</span>
+                <span class="review-count" id="skol-tsirk">19 сэтгэгдэл</span>
               </div>
-              <span class="status">Онлайн</span>
+              <span class="status" id="skol-tsirk">Онлайн</span>
             </div>
           </div>
         </div>
       </div>
-      <div class="place-card">
-        <div class="score">4.2</div>
-        <div class="card-content">
+      <div class="place-card" id="skol-10">
+        <div class="score" id="skol-10">4.2</div>
+        <div class="card-content" id="skol-10">
           <img src="Skol.10.png" alt="SKOL 10r horoolol">
-          <div class="place-info">
+          <div class="place-info" id="skol-10">
             <h3>SKOL Gaming Center | 10-р хороолол салбар</h3>
-            <div class="location">
+            <div class="location" id="skol-10">
               <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
             </div>
-            <div class="rating-row">
-              <div class="rating">
-                <span class="stars">★★★★★</span>
-                <span class="review-count">12 сэтгэгдэл</span>
+            <div class="rating-row" id="skol-10">
+              <div class="rating" id="skol-10">
+                <span class="stars" id="skol-10">★★★★★</span>
+                <span class="review-count" id="skol-10">12 сэтгэгдэл</span>
               </div>
-              <span class="status">Онлайн</span>
+              <span class="status" id="skol-10">Онлайн</span>
             </div>
           </div>
         </div>
@@ -117,8 +117,20 @@
       padding: 0;
       box-sizing: border-box;
     }
+    :root {
+      --primary-color: #8a2be2;
+      --secondary-color: #1a1a2e;
+      --accent-color: #10b981;
+      --text-color: #ffffff;
+      --bg-color: #0f0f1e;
+      --color-text-placeholder: #00000040;
+      --color-text-heading: #000000E0;
+      --color-text-primary: #000000E0;
+      --color-text-secondary: #000000A6;
+      --color-text-tertiary: #00000073;
+    }
     body {
-      background-color: #1a1a2e;
+      background-color: var(--bg-color);
       overflow: hidden;
       font-family: 'Manrope', sans-serif;
     }
