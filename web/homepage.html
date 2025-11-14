@@ -23,6 +23,33 @@
   </header>
   <main>
     <div class="sidebar">
+      <div class="filters">
+        <div class="filter-header">
+          <h4>Шүүлтүүр & Эрэмбэлэх</h4>
+          <button class="clear-filters" type="button">Цэвэрлэх</button>
+        </div>
+        <div class="filter-group">
+          <select id="sort" class="sort-select">
+            <option value="new">Шинэ нь эхэндээ</option>
+            <option value="rating_desc">Үнэлгээ өсөхөөр</option>
+            <option value="rating_asc">Үнэлгээ буурахаар</option>
+            <option value="price_desc">Үнэ өсөхөөр</option>
+            <option value="price_desc">Үнэ буурахаар</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Төрөл:</label>
+          <div class="chips">
+            <button class="chip" data-filter="PC" type="button">PC</button>
+            <button class="chip" data-filter="Console" type="button">Console</button>
+            <button class="chip" data-filter="Hybrid" type="button">Холимог</button>
+          </div>
+        </div>
+        <div class="filter-group rating-group">
+          <label for="minRating">Min үнэлгээ: <span id="ratingValue">0+</span></label>
+          <input id="minRating" type="range" min="0" max="5" step="0.5" value="0" class="rating-range" aria-valuemin="0" aria-valuemax="5">
+        </div>
+      </div>
       <div class="place-card">
         <div class="card-content">
           <div class="image-wrapper">
@@ -42,7 +69,6 @@
               <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.3641 4.63606C20.0164 6.28819 20.9614 8.51817 20.9993 10.8545C21.0372 13.1908 20.1649 15.4502 18.5671 17.1551L18.3641 17.3651L14.1211 21.6071C13.5827 22.1451 12.8599 22.4584 12.0992 22.4834C11.3385 22.5085 10.5967 22.2435 10.0241 21.7421L9.88006 21.6071L5.63606 17.3641C3.94822 15.6762 3 13.387 3 11.0001C3 8.61309 3.94822 6.32389 5.63606 4.63606C7.32389 2.94822 9.61309 2 12.0001 2C14.387 2 16.6762 2.94822 18.3641 4.63606ZM12.0001 8.00006C11.6061 8.00006 11.216 8.07765 10.852 8.22842C10.488 8.37918 10.1573 8.60016 9.87873 8.87873C9.60016 9.15731 9.37918 9.48803 9.22842 9.85201C9.07765 10.216 9.00006 10.6061 9.00006 11.0001C9.00006 11.394 9.07765 11.7841 9.22842 12.1481C9.37918 12.5121 9.60016 12.8428 9.87873 13.1214C10.1573 13.4 10.488 13.6209 10.852 13.7717C11.216 13.9225 11.6061 14.0001 12.0001 14.0001C12.7957 14.0001 13.5588 13.684 14.1214 13.1214C14.684 12.5588 15.0001 11.7957 15.0001 11.0001C15.0001 10.2044 14.684 9.44134 14.1214 8.87873C13.5588 8.31613 12.7957 8.00006 12.0001 8.00006Z"/>
               </svg>
-
               <p>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</p>
             </div>
           </div>
@@ -64,6 +90,9 @@
           <div class="place-info">
             <h3>MOON PC Gaming Center</h3>
             <div class="location">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3641 4.63606C20.0164 6.28819 20.9614 8.51817 20.9993 10.8545C21.0372 13.1908 20.1649 15.4502 18.5671 17.1551L18.3641 17.3651L14.1211 21.6071C13.5827 22.1451 12.8599 22.4584 12.0992 22.4834C11.3385 22.5085 10.5967 22.2435 10.0241 21.7421L9.88006 21.6071L5.63606 17.3641C3.94822 15.6762 3 13.387 3 11.0001C3 8.61309 3.94822 6.32389 5.63606 4.63606C7.32389 2.94822 9.61309 2 12.0001 2C14.387 2 16.6762 2.94822 18.3641 4.63606ZM12.0001 8.00006C11.6061 8.00006 11.216 8.07765 10.852 8.22842C10.488 8.37918 10.1573 8.60016 9.87873 8.87873C9.60016 9.15731 9.37918 9.48803 9.22842 9.85201C9.07765 10.216 9.00006 10.6061 9.00006 11.0001C9.00006 11.394 9.07765 11.7841 9.22842 12.1481C9.37918 12.5121 9.60016 12.8428 9.87873 13.1214C10.1573 13.4 10.488 13.6209 10.852 13.7717C11.216 13.9225 11.6061 14.0001 12.0001 14.0001C12.7957 14.0001 13.5588 13.684 14.1214 13.1214C14.684 12.5588 15.0001 11.7957 15.0001 11.0001C15.0001 10.2044 14.684 9.44134 14.1214 8.87873C13.5588 8.31613 12.7957 8.00006 12.0001 8.00006Z"/>
+              </svg>
               <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
             </div>
           </div>
@@ -85,6 +114,9 @@
           <div class="place-info">
             <h3>SKOL Gaming Center | Цирк салбар</h3>
             <div class="location">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3641 4.63606C20.0164 6.28819 20.9614 8.51817 20.9993 10.8545C21.0372 13.1908 20.1649 15.4502 18.5671 17.1551L18.3641 17.3651L14.1211 21.6071C13.5827 22.1451 12.8599 22.4584 12.0992 22.4834C11.3385 22.5085 10.5967 22.2435 10.0241 21.7421L9.88006 21.6071L5.63606 17.3641C3.94822 15.6762 3 13.387 3 11.0001C3 8.61309 3.94822 6.32389 5.63606 4.63606C7.32389 2.94822 9.61309 2 12.0001 2C14.387 2 16.6762 2.94822 18.3641 4.63606ZM12.0001 8.00006C11.6061 8.00006 11.216 8.07765 10.852 8.22842C10.488 8.37918 10.1573 8.60016 9.87873 8.87873C9.60016 9.15731 9.37918 9.48803 9.22842 9.85201C9.07765 10.216 9.00006 10.6061 9.00006 11.0001C9.00006 11.394 9.07765 11.7841 9.22842 12.1481C9.37918 12.5121 9.60016 12.8428 9.87873 13.1214C10.1573 13.4 10.488 13.6209 10.852 13.7717C11.216 13.9225 11.6061 14.0001 12.0001 14.0001C12.7957 14.0001 13.5588 13.684 14.1214 13.1214C14.684 12.5588 15.0001 11.7957 15.0001 11.0001C15.0001 10.2044 14.684 9.44134 14.1214 8.87873C13.5588 8.31613 12.7957 8.00006 12.0001 8.00006Z"/>
+              </svg>  
               <span>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</span>
             </div>
           </div>
@@ -106,6 +138,9 @@
           <div class="place-info">
             <h3>SKOL Gaming Center | 10-р хороолол салбар</h3>
             <div class="location">
+              <svg class="icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.3641 4.63606C20.0164 6.28819 20.9614 8.51817 20.9993 10.8545C21.0372 13.1908 20.1649 15.4502 18.5671 17.1551L18.3641 17.3651L14.1211 21.6071C13.5827 22.1451 12.8599 22.4584 12.0992 22.4834C11.3385 22.5085 10.5967 22.2435 10.0241 21.7421L9.88006 21.6071L5.63606 17.3641C3.94822 15.6762 3 13.387 3 11.0001C3 8.61309 3.94822 6.32389 5.63606 4.63606C7.32389 2.94822 9.61309 2 12.0001 2C14.387 2 16.6762 2.94822 18.3641 4.63606ZM12.0001 8.00006C11.6061 8.00006 11.216 8.07765 10.852 8.22842C10.488 8.37918 10.1573 8.60016 9.87873 8.87873C9.60016 9.15731 9.37918 9.48803 9.22842 9.85201C9.07765 10.216 9.00006 10.6061 9.00006 11.0001C9.00006 11.394 9.07765 11.7841 9.22842 12.1481C9.37918 12.5121 9.60016 12.8428 9.87873 13.1214C10.1573 13.4 10.488 13.6209 10.852 13.7717C11.216 13.9225 11.6061 14.0001 12.0001 14.0001C12.7957 14.0001 13.5588 13.684 14.1214 13.1214C14.684 12.5588 15.0001 11.7957 15.0001 11.0001C15.0001 10.2044 14.684 9.44134 14.1214 8.87873C13.5588 8.31613 12.7957 8.00006 12.0001 8.00006Z"/>
+              </svg>
               <p>ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар</p>
             </div>
           </div>
@@ -431,6 +466,80 @@
   .icon {
     fill: var(--secondary-color)
   }
+    .filters {
+      background: linear-gradient(180deg, #ffffff, #fbfbfd);
+      border: 1px solid rgba(0,0,0,0.06);
+      padding: 14px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+    }
+    .filter-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .filter-header h4 {
+      font-size: 14px;
+      color: var(--color-text-heading);
+      margin: 0;
+    }
+    .clear-filters {
+      background: transparent;
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .filter-group { margin-bottom: 10px; display: flex; flex-direction: column; gap: 8px; }
+    .filter-group label { font-size: 13px; color: var(--color-text-secondary); }
+    .sort-select {
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(0,0,0,0.08);
+      background: white;
+      font-size: 14px;
+    }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+    .chip {
+      background: #f3f4f6;
+      border: 1px solid rgba(0,0,0,0.06);
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .chip.active { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+    .rating-group { gap: 6px; }
+    .rating-range { width: 100%; }
+    #ratingValue { font-weight: 700; margin-left: 6px; color: var(--color-text-heading); }
+    @media (max-width: 900px) {
+      .filters { margin: 12px; }
+    }
   </style>
+  <script>
+    (function(){
+      const minRating = document.getElementById('minRating');
+      const ratingValue = document.getElementById('ratingValue');
+      const chips = document.querySelectorAll('.chip');
+      const clearBtn = document.querySelector('.clear-filters');
+
+      if (minRating && ratingValue) {
+        minRating.addEventListener('input', e => ratingValue.textContent = e.target.value + '+');
+      }
+      chips.forEach(c => c.addEventListener('click', () => c.classList.toggle('active')));
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          minRating.value = 0;
+          ratingValue.textContent = '0+';
+          document.getElementById('sort').value = 'recommended';
+          chips.forEach(c => c.classList.remove('active'));
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
