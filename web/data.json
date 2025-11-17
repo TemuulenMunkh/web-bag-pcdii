@@ -1,0 +1,24 @@
+{
+"places":[
+  { "name":"Game On Ulaanbaatar",
+    "rating":4.2,
+    "date":"2024-06-10",
+    "price":5000
+},
+  { "name":"MOON PC Gaming Center",
+    "rating":4.0,
+    "date":"2024-06-12",
+    "price":4000
+},
+  { "name":"SKOL Gaming Center | Цирк салбар",
+    "rating":4.5,
+    "date":"2024-06-11",
+    "price":6000
+},
+  { "name":"SKOL Gaming Center | 10-р хороолол салбар",
+    "rating":4.5,
+    "date":"2024-06-09",
+    "price":6000
+}
+]
+}

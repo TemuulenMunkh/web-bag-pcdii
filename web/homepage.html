@@ -47,7 +47,7 @@
         </div>
         <div class="filter-group rating-group">
           <label for="minRating">Min үнэлгээ: <span id="ratingValue">0+</span></label>
-          <input id="minRating" type="range" min="0" max="5" step="0.5" value="0" class="rating-range" aria-valuemin="0" aria-valuemax="5">
+          <input class="rating-range" id="minRating" type="range" min="0" max="5" step="0.5" value="0">
         </div>
       </div>
       <div class="place-card">
@@ -55,7 +55,7 @@
           <div class="image-wrapper">
             <img src="Game.On.png">
             <div class="score-overlay">
-              <div class="score">4.2</div>
+              <div class="rating">4.2</div>
               <div class="rating-overlay">
                 <span class="stars">★★★★★</span>
                 <span class="review-count">12 сэтгэгдэл</span>
@@ -79,7 +79,7 @@
           <div class="image-wrapper">
             <img src="Moon.png">
             <div class="score-overlay">
-              <div class="score">4.0</div>
+              <div class="rating">4.0</div>
               <div class="rating-overlay">
                 <span class="stars">★★★☆☆</span>
                 <span class="review-count">9 сэтгэгдэл</span>
@@ -103,7 +103,7 @@
           <div class="image-wrapper">
             <img src="Skol.tsirk.png">
             <div class="score-overlay">
-              <div class="score">4.5</div>
+              <div class="rating">4.5</div>
               <div class="rating-overlay">
                 <span class="stars">★★★★★</span>
                 <span class="review-count">20 сэтгэгдэл</span>
@@ -127,7 +127,7 @@
           <div class="image-wrapper">
             <img src="Skol.10.png">
             <div class="score-overlay">
-              <div class="score">4.5</div>
+              <div class="rating">4.5</div>
               <div class="rating-overlay">
                 <span class="stars">★★★★★</span>
                 <span class="review-count">20 сэтгэгдэл</span>
@@ -383,7 +383,7 @@
 }
 
 /* тоон оноо */
-.score {
+.rating {
   background: rgba(0,0,0,0.75);
   color: #fff;
   font-size: 14px;
