@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaming Center Details | pcdii.mn</title>
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">pcdii.mn</div>
+    <div class="search-bar">
+      <select>
+        <option>PC</option>
+      </select>
+      <input type="text" placeholder="Хайх газрын нэрийг бичнэ үү" />
+    </div>
+    <div class="nav-links">
+      <a href="login.html">Нэвтрэх</a>
+      <a href="signup.html">Бүртгүүлэх</a>
+      <a href="register-pc.html">PC-гээ бүртгүүлэх</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <button class="back-button" onclick="window.location.href='index.html'">
+      ← Буцах
+    </button>
+
+    <div class="header-section">
+      <div class="logo-circle" id="logoCircle">GAME<br>ON</div>
+      <div class="place-info">
+        <div>
+          <span class="rating-stars" id="ratingStars">★★★★☆</span>
+          <span class="rating-number" id="ratingNumber">4.2</span>
+        </div>
+        <h1 id="placeName">Game On Ulaanbaatar</h1>
+        <div class="contact-info">
+          <span>🕐 Always open</span>
+          <span>📞 7277-1155</span>
+          <span>📷 gameon.ulaanbaatar</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="left-section">
+        <img id="mainImage" src="" alt="Gaming Center Interior">
+        <div class="image-nav">➜</div>
+        <div class="carousel-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="card">
+          <div class="capacity-header">
+            <div class="capacity-item">
+              Нийт<br><b>120</b>
+            </div>
+            <div class="capacity-item">
+              Сул<br><b>24</b>
+            </div>
+            <div class="usage-badge">96/120</div>
+          </div>
+          
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">🌬️</div>
+              <span>Агаар цэвэршүүлэгч</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🚬</div>
+              <span>Тамхины өрөө</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📶</div>
+              <span>Үнэгүй Wi-Fi</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🍔</div>
+              <span>Хоол гардаг</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🅿️</div>
+              <span>Зогсоолтой</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🔌</div>
+              <span>Утасгүй цэнэглэгч</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="room-card">
+          <div class="room-header">
+            <div class="room-title">Өрөөний нэр</div>
+            <div class="availability-badge">12/40</div>
+          </div>
+          <div class="room-title" style="font-size: 20px; margin-bottom: 8px;">ЗААЛ (240hz)</div>
+          <div class="room-pricing">Цагийн: 5,500 ₮ | Хоногийн: 30,000 ₮</div>
+          
+          <div class="specs-section">
+            <h4>Тоног төхөөрөмж</h4>
+            <div class="spec-item">
+              <span class="spec-label">CPU:</span>
+              <span class="spec-value">i7-14th gen</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">RAM:</span>
+              <span class="spec-value">32GB</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">GPU:</span>
+              <span class="spec-value">RTX 4070 Ti Super</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Monitor:</span>
+              <span class="spec-value">BenQ 240hz XL2546K</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Headset:</span>
+              <span class="spec-value">HyperX Cloud III</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Mouse:</span>
+              <span class="spec-value">Zowie EC3-C</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Keyboard:</span>
+              <span class="spec-value">Royal Kludge R87 Pro TKL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <div class="time-inputs">
+            <input type="text" class="time-input" placeholder="Start time">
+            <span class="time-separator">→</span>
+            <input type="text" class="time-input" placeholder="End time">
+          </div>
+          <button class="book-button" onclick="goToSeatSelection()">Суудал захиалах</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/detail.js"></script>
+</body>
+</html>

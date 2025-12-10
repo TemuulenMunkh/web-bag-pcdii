@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Бүртгүүлэх | pcdii.mn</title>
+  <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="logo-section">
+      <div class="logo-text">pcdii.mn</div>
+      <div class="logo-subtitle">PC Gaming Centers</div>
+    </div>
+
+    <h2>Бүртгүүлэх</h2>
+    <p class="subtitle">Шинэ бүртгэл үүсгэх</p>
+
+    <div class="error-message" id="errorMessage"></div>
+    <div class="success-message" id="successMessage"></div>
+
+    <form id="signupForm">
+      <div class="form-group">
+        <label for="fullname">Нэр</label>
+        <input 
+          type="text" 
+          id="fullname" 
+          placeholder="Таны нэр" 
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Имэйл хаяг</label>
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="example@email.com" 
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Утасны дугаар</label>
+        <input 
+          type="tel" 
+          id="phone" 
+          placeholder="99999999" 
+          pattern="[0-9]{8}"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Нууц үг</label>
+        <div class="password-container">
+          <input 
+            type="password" 
+            id="password" 
+            placeholder="••••••••" 
+            required
+            minlength="6"
+          />
+          <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+        </div>
+        <div class="password-strength">
+          <div class="password-strength-bar" id="strengthBar"></div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Нууц үг давтах</label>
+        <div class="password-container">
+          <input 
+            type="password" 
+            id="confirmPassword" 
+            placeholder="••••••••" 
+            required
+            minlength="6"
+          />
+          <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</span>
+        </div>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" required />
+        <label for="terms">
+          Би <a href="#">үйлчилгээний нөхцөл</a> болон <a href="#">нууцлалын бодлого</a>-тай танилцаж зөвшөөрч байна
+        </label>
+      </div>
+
+      <button type="submit" class="signup-button" id="signupBtn">
+        Бүртгүүлэх
+      </button>
+    </form>
+
+    <div class="divider">
+      <span>Эсвэл</span>
+    </div>
+
+    <div class="social-login">
+      <button class="social-button" onclick="signupWithGoogle()">
+        <span>🔵</span> Google
+      </button>
+      <button class="social-button" onclick="signupWithFacebook()">
+        <span>📘</span> Facebook
+      </button>
+    </div>
+
+    <div class="login-link">
+      Бүртгэлтэй юу? <a href="login.html">Нэвтрэх</a>
+    </div>
+
+    <div class="back-home">
+      <a href="index.html">← Нүүр хуудас руу буцах</a>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+</html>

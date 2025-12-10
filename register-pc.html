@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>РС-гээ бүртгүүлэх | pcdii.mn</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="register-container">
+    <div class="header">
+      <div class="logo-text">pcdii.mn</div>
+      <h2>РС-гээ бүртгүүлэх</h2>
+      <p>Өөрийн PC gaming төвөө манай платформд бүртгүүлж, олон хэрэглэгчид хүрээрэй</p>
+    </div>
+
+    <div class="form-container">
+      <div class="progress-steps">
+        <div class="step active" data-step="1">
+          <div class="step-number">1</div>
+          <div class="step-label">Ерөнхий мэдээлэл</div>
+        </div>
+        <div class="step" data-step="2">
+          <div class="step-number">2</div>
+          <div class="step-label">Байршил & Холбоо барих</div>
+        </div>
+        <div class="step" data-step="3">
+          <div class="step-number">3</div>
+          <div class="step-label">Үйлчилгээ & Тоноглол</div>
+        </div>
+        <div class="step" data-step="4">
+          <div class="step-number">4</div>
+          <div class="step-label">Зураг & Баталгаажуулалт</div>
+        </div>
+      </div>
+
+      <form id="pcRegisterForm">
+        <!-- Step 1: Basic Information -->
+        <div class="form-section active" data-section="1">
+          <h3 class="section-title">Ерөнхий мэдээлэл</h3>
+          
+          <div class="form-group">
+            <label>РС-ийн нэр <span class="required">*</span></label>
+            <input type="text" name="pcName" placeholder="Жишээ: Game On Ulaanbaatar" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Эзэмшигчийн нэр <span class="required">*</span></label>
+              <input type="text" name="ownerName" placeholder="Таны нэр" required />
+            </div>
+            <div class="form-group">
+              <label>Имэйл хаяг <span class="required">*</span></label>
+              <input type="email" name="email" placeholder="example@email.com" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Утасны дугаар <span class="required">*</span></label>
+              <input type="tel" name="phone" placeholder="99999999" pattern="[0-9]{8}" required />
+            </div>
+            <div class="form-group">
+              <label>Нийт суудлын тоо <span class="required">*</span></label>
+              <input type="number" name="totalSeats" placeholder="120" min="1" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Товч танилцуулга <span class="required">*</span></label>
+            <textarea name="description" placeholder="Танай PC gaming төвийн тухай богино мэдээлэл..." required></textarea>
+          </div>
+        </div>
+
+        <!-- Step 2: Location & Contact -->
+        <div class="form-section" data-section="2">
+          <h3 class="section-title">Байршил & Холбоо барих</h3>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label>Дүүрэг <span class="required">*</span></label>
+              <select name="district" required>
+                <option value="">Сонгох</option>
+                <option value="ХУД">Хан-Уул</option>
+                <option value="БЗД">Баянзүрх</option>
+                <option value="СХД">Сүхбаатар</option>
+                <option value="БГД">Баянгол</option>
+                <option value="ЧД">Чингэлтэй</option>
+                <option value="СБД">Сонгинохайрхан</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Хороо <span class="required">*</span></label>
+              <input type="text" name="khoroo" placeholder="15-р хороо" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Хаяг <span class="required">*</span></label>
+            <input type="text" name="address" placeholder="Махатма Гандийн гудамж, CEO оффис, 10 давхар" required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Өргөрөг (Latitude)</label>
+              <input type="text" name="latitude" placeholder="47.9185" />
+            </div>
+            <div class="form-group">
+              <label>Уртраг (Longitude)</label>
+              <input type="text" name="longitude" placeholder="106.9171" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Ажиллах цаг</label>
+              <input type="text" name="workingHours" placeholder="24/7 эсвэл 09:00 - 23:00" />
+            </div>
+            <div class="form-group">
+              <label>Social media</label>
+              <input type="text" name="instagram" placeholder="Instagram username" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Services & Equipment -->
+        <div class="form-section" data-section="3">
+          <h3 class="section-title">Үйлчилгээ & Тоноглол</h3>
+          
+          <div class="form-group">
+            <label>Санал болгож буй үйлчилгээ</label>
+            <div class="checkbox-group">
+              <div class="checkbox-item">
+                <input type="checkbox" id="wifi" name="services" value="wifi" />
+                <label for="wifi">Үнэгүй Wi-Fi</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="food" name="services" value="food" />
+                <label for="food">Хоол, ундаа</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="parking" name="services" value="parking" />
+                <label for="parking">Зогсоол</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="aircon" name="services" value="aircon" />
+                <label for="aircon">Агаар цэвэршүүлэгч</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="smoking" name="services" value="smoking" />
+                <label for="smoking">Тамхины өрөө</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" id="wireless" name="services" value="wireless" />
+                <label for="wireless">Утасгүй цэнэглэгч</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Цагийн үнэ (₮) <span class="required">*</span></label>
+              <input type="number" name="hourlyRate" placeholder="5000" required />
+            </div>
+            <div class="form-group">
+              <label>Хоногийн үнэ (₮)</label>
+              <input type="number" name="dailyRate" placeholder="30000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Тоног төхөөрөмжийн мэдээлэл</label>
+            <textarea name="equipment" placeholder="CPU: i7-14th gen&#10;RAM: 32GB&#10;GPU: RTX 4070 Ti Super&#10;Monitor: BenQ 240hz XL2546K"></textarea>
+          </div>
+        </div>
+
+        <!-- Step 4: Photos & Confirmation -->
+        <div class="form-section" data-section="4">
+          <h3 class="section-title">Зураг & Баталгаажуулалт</h3>
+          
+          <div class="form-group">
+            <label>РС-ийн зургууд <span class="required">*</span></label>
+            <div class="file-upload" onclick="document.getElementById('photos').click()">
+              <input type="file" id="photos" name="photos" multiple accept="image/*" />
+              <div class="file-upload-icon">📷</div>
+              <div class="file-upload-text">
+                <strong>Зураг оруулах</strong><br>
+                <small>Хамгийн ихдээ 10 зураг оруулна уу</small>
+              </div>
+            </div>
+            <div id="photoPreview" style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;"></div>
+          </div>
+
+          <div class="form-group">
+            <label>Лого зураг</label>
+            <div class="file-upload" onclick="document.getElementById('logo').click()">
+              <input type="file" id="logo" name="logo" accept="image/*" />
+              <div class="file-upload-icon">🎨</div>
+              <div class="file-upload-text">
+                <strong>Лого оруулах</strong><br>
+                <small>Дөрвөлжин байдлаар</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="checkbox-item" style="margin-top: 20px;">
+            <input type="checkbox" id="terms" required />
+            <label for="terms">
+              Би үйлчилгээний нөхцөл, платформын дүрэм журмыг хүлээн зөвшөөрч байна <span class="required">*</span>
+            </label>
+          </div>
+
+          <div class="success-message" id="successMessage">
+            <div class="success-icon">✅</div>
+            <h3>Амжилттай бүртгэгдлээ!</h3>
+            <p>Таны РС-ийн мэдээллийг хянаж, 1-2 хоногийн дотор баталгаажуулах болно.</p>
+            <p>Имэйл хаягаар баталгаажуулалтын мэдээлэл илгээх болно.</p>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">
+            ← Буцах
+          </button>
+          <button type="button" class="btn btn-primary" id="nextBtn">
+            Үргэлжлүүлэх →
+          </button>
+          <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">
+            Бүртгүүлэх
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="back-home">
+    <a href="index.html">← Нүүр хуудас руу буцах</a>
+  </div>
+
+  <script src="js/register.js"></script>
+</body>
+</html>

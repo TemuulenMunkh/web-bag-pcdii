@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Суудал сонгох | pcdii.mn</title>
+  <link rel="stylesheet" href="css/seats.css">
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="window.location.href='index.html'">pcdii.mn</div>
+    <input type="text" placeholder="Хайх газрын нэрийг бичнэ үү" />
+    <div class="links">
+      <a href="login.html">Нэвтрэх</a>
+      <a href="signup.html">Бүртгүүлэх</a>
+      <a href="register-pc.html">PC-гээ бүртгүүлэх</a>
+    </div>
+  </header>
+
+  <button class="back-button" onclick="goBack()">← Буцах</button>
+
+  <div class="header-section">
+    <div class="logo-circle" id="logoCircle">GAME<br>ON</div>
+    <div class="place-info">
+      <div class="rating" id="rating">⭐ 4.2</div>
+      <h1 id="placeName">Game On Ulaanbaatar</h1>
+      <div class="contact">
+        <span>🕐 Always open</span>
+        <span>📞 7277-1155</span>
+        <span>📷 gameon.ulaanbaatar</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div>
+      <div class="seat-grid" id="seatGrid"></div>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-box available"></div>
+          <span>Сул</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-box selected"></div>
+          <span>Сонгосон</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-box unavailable"></div>
+          <span>Эзэмдсэн</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="status">
+        <h3>ЗААЛ (240hz)</h3>
+        <span class="green">12/40</span>
+      </div>
+      <p>Цагийн: 5,500 ₮ | Хоногийн: 30,000 ₮</p>
+      <div class="specs">
+        <p><b>CPU:</b> i7-14th gen</p>
+        <p><b>RAM:</b> 32GB</p>
+        <p><b>GPU:</b> RTX 4070 Ti Super</p>
+        <p><b>Monitor:</b> BenQ 240hz XL2546K</p>
+        <p><b>Headset:</b> HyperX Cloud III</p>
+        <p><b>Mouse:</b> Zowie EC3-C</p>
+        <p><b>Keyboard:</b> Royal Kludge R87 Pro TKL</p>
+      </div>
+      <div class="footer-info">
+        <h4 id="selectedCount">0/10</h4>
+        <span>Сонгож болох суудлын тоо</span>
+        <p><b>Өрөөний төрөл:</b> ЗААЛ 240hz</p>
+      </div>
+      <button class="confirm-button" id="confirmBtn" disabled onclick="confirmBooking()">
+        Захиалга баталгаажуулах
+      </button>
+    </div>
+  </div>
+
+  <script src="js/seats.js"></script>
+</body>
+</html>

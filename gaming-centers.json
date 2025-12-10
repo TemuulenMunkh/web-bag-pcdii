@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Game On Ulaanbaatar",
+      "score": 4.2,
+      "address": "ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар",
+      "stars": 5,
+      "reviews": 12,
+      "status": "Онлайн",
+      "lat": 47.9185,
+      "lng": 106.9171,
+      "image": "images/game-on.png"
+    },
+    {
+      "id": 2,
+      "name": "MOON PC Gaming Center",
+      "score": 2.3,
+      "address": "ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар",
+      "stars": 3,
+      "reviews": 9,
+      "status": "Онлайн",
+      "lat": 47.9195,
+      "lng": 106.9181,
+      "image": "images/moon-pc.png"
+    },
+    {
+      "id": 3,
+      "name": "SKOL Gaming Center | Цирк салбар",
+      "score": 4.2,
+      "address": "ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар",
+      "stars": 5,
+      "reviews": 19,
+      "status": "Онлайн",
+      "lat": 47.9175,
+      "lng": 106.9191,
+      "image": "images/skol-circus.png"
+    },
+    {
+      "id": 4,
+      "name": "SKOL Gaming Center | 10-р хороолол салбар",
+      "score": 4.2,
+      "address": "ХУД, 15-р хороо, Махатма Гандийн гудамж, CEO оффис, 10 давхар",
+      "stars": 5,
+      "reviews": 12,
+      "status": "Онлайн",
+      "lat": 47.9165,
+      "lng": 106.9161,
+      "image": "images/skol-10.png"
+    }
+  ]
